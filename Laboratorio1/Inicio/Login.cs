@@ -106,12 +106,5 @@ namespace Tutorial5
         {
 
         }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Invitado.InvPrincipal ip = new Invitado.InvPrincipal();
-            ip.Show();
-        }
     }
 }

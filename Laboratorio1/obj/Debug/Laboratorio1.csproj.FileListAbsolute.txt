@@ -48,23 +48,3 @@ D:\Nueva carpeta\Nueva carpeta\UTN\2016\Metodología de sistemas\TRABAJO\repo\La
 D:\Nueva carpeta\Nueva carpeta\UTN\2016\Metodología de sistemas\TRABAJO\repo\Laboratorio1\bin\Debug\EntityFramework.xml
 D:\Nueva carpeta\Nueva carpeta\UTN\2016\Metodología de sistemas\TRABAJO\repo\Laboratorio1\bin\Debug\EntityFramework.SqlServer.xml
 D:\Nueva carpeta\Nueva carpeta\UTN\2016\Metodología de sistemas\TRABAJO\repo\Laboratorio1\obj\Debug\Tutorial5.buscador.resources
-C:\Users\Osva\Documents\C#\Laboratorio1\bin\Debug\Tutorial5.exe.config
-C:\Users\Osva\Documents\C#\Laboratorio1\bin\Debug\Tutorial5.exe
-C:\Users\Osva\Documents\C#\Laboratorio1\bin\Debug\Tutorial5.pdb
-C:\Users\Osva\Documents\C#\Laboratorio1\bin\Debug\EntityFramework.dll
-C:\Users\Osva\Documents\C#\Laboratorio1\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Osva\Documents\C#\Laboratorio1\bin\Debug\EntityFramework.xml
-C:\Users\Osva\Documents\C#\Laboratorio1\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Osva\Documents\C#\Laboratorio1\obj\Debug\Tutorial5.buscador.resources
-C:\Users\Osva\Documents\C#\Laboratorio1\obj\Debug\Tutorial5.Compras.resources
-C:\Users\Osva\Documents\C#\Laboratorio1\obj\Debug\Tutorial5.Login.resources
-C:\Users\Osva\Documents\C#\Laboratorio1\obj\Debug\Tutorial5.Registrarse.resources
-C:\Users\Osva\Documents\C#\Laboratorio1\obj\Debug\Tutorial5.Clientes.resources
-C:\Users\Osva\Documents\C#\Laboratorio1\obj\Debug\Tutorial5.MenuPrincipal.resources
-C:\Users\Osva\Documents\C#\Laboratorio1\obj\Debug\Tutorial5.Properties.Resources.resources
-C:\Users\Osva\Documents\C#\Laboratorio1\obj\Debug\Tutorial5.Splash.resources
-C:\Users\Osva\Documents\C#\Laboratorio1\obj\Debug\Tutorial5.Ventas.resources
-C:\Users\Osva\Documents\C#\Laboratorio1\obj\Debug\Laboratorio1.csproj.GenerateResource.Cache
-C:\Users\Osva\Documents\C#\Laboratorio1\obj\Debug\Tutorial5.exe
-C:\Users\Osva\Documents\C#\Laboratorio1\obj\Debug\Tutorial5.pdb
-C:\Users\Osva\Documents\C#\Laboratorio1\obj\Debug\Tutorial5.Invitado.InvPrincipal.resources

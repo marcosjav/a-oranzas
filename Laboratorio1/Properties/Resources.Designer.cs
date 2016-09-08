@@ -153,29 +153,9 @@ namespace Tutorial5.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Cabalgata {
-            get {
-                object obj = ResourceManager.GetObject("Cabalgata", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap cabecera {
             get {
                 object obj = ResourceManager.GetObject("cabecera", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap camping {
-            get {
-                object obj = ResourceManager.GetObject("camping", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -243,16 +223,6 @@ namespace Tutorial5.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap flechaAlreves {
-            get {
-                object obj = ResourceManager.GetObject("flechaAlreves", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap fondo {
             get {
                 object obj = ResourceManager.GetObject("fondo", resourceCulture);
@@ -266,16 +236,6 @@ namespace Tutorial5.Properties {
         internal static System.Drawing.Bitmap home {
             get {
                 object obj = ResourceManager.GetObject("home", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap hosteria_noche {
-            get {
-                object obj = ResourceManager.GetObject("hosteria_noche", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -323,39 +283,9 @@ namespace Tutorial5.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap museo {
-            get {
-                object obj = ResourceManager.GetObject("museo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap paseoNautico {
-            get {
-                object obj = ResourceManager.GetObject("paseoNautico", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap pie {
             get {
                 object obj = ResourceManager.GetObject("pie", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap posada {
-            get {
-                object obj = ResourceManager.GetObject("posada", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -376,16 +306,6 @@ namespace Tutorial5.Properties {
         internal static System.Drawing.Bitmap proveedor2 {
             get {
                 object obj = ResourceManager.GetObject("proveedor2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap restaurant {
-            get {
-                object obj = ResourceManager.GetObject("restaurant", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -416,16 +336,6 @@ namespace Tutorial5.Properties {
         internal static System.Drawing.Bitmap ventas2 {
             get {
                 object obj = ResourceManager.GetObject("ventas2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap xcode {
-            get {
-                object obj = ResourceManager.GetObject("xcode", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

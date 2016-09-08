@@ -87,12 +87,6 @@
     <Compile Include="Factura.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Invitado\InvPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Invitado\InvPrincipal.Designer.cs">
-      <DependentUpon>InvPrincipal.cs</DependentUpon>
-    </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -182,9 +176,6 @@
     <Compile Include="Usuario.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Invitado\InvPrincipal.resx">
-      <DependentUpon>InvPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Usr-Adm\buscador.resx">
       <DependentUpon>buscador.cs</DependentUpon>
     </EmbeddedResource>
@@ -313,15 +304,6 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
-    <None Include="Resources\xcode.png" />
-    <None Include="Resources\flechaAlreves.png" />
-    <None Include="Resources\Cabalgata.jpg" />
-    <None Include="Resources\camping.jpg" />
-    <None Include="Resources\hosteria_noche.jpg" />
-    <None Include="Resources\museo.jpg" />
-    <None Include="Resources\paseoNautico.jpg" />
-    <None Include="Resources\posada.jpg" />
-    <None Include="Resources\restaurant.jpg" />
     <Content Include="Soft TST.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -344,7 +326,6 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
