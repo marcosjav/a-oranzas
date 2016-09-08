@@ -28,3 +28,22 @@ E:\Todo UTN\2º Año\2º Cuatrimestre\Metodologia a sistemas\Laboratorio 1\RECUR
 E:\Todo UTN\2º Año\2º Cuatrimestre\Metodologia a sistemas\Laboratorio 1\RECURSOS\Tutorial 5 by Start Tec Peru\Tutorial 5 by Start Tec Peru\Código Fuente\C#\Laboratorio1\obj\Debug\Tutorial5.Splash.resources
 E:\Todo UTN\2º Año\2º Cuatrimestre\Metodologia a sistemas\Laboratorio 1\RECURSOS\Tutorial 5 by Start Tec Peru\Tutorial 5 by Start Tec Peru\Código Fuente\C#\Laboratorio1\obj\Debug\Tutorial5.Ventas.resources
 E:\Todo UTN\2º Año\2º Cuatrimestre\Metodologia a sistemas\Laboratorio 1\RECURSOS\Tutorial 5 by Start Tec Peru\Tutorial 5 by Start Tec Peru\Código Fuente\C#\Laboratorio1\obj\Debug\Laboratorio1.csproj.GenerateResource.Cache
+D:\Nueva carpeta\Nueva carpeta\UTN\2016\Metodología de sistemas\TRABAJO\repo\Laboratorio1\bin\Debug\Tutorial5.exe.config
+D:\Nueva carpeta\Nueva carpeta\UTN\2016\Metodología de sistemas\TRABAJO\repo\Laboratorio1\bin\Debug\Tutorial5.exe
+D:\Nueva carpeta\Nueva carpeta\UTN\2016\Metodología de sistemas\TRABAJO\repo\Laboratorio1\bin\Debug\Tutorial5.pdb
+D:\Nueva carpeta\Nueva carpeta\UTN\2016\Metodología de sistemas\TRABAJO\repo\Laboratorio1\obj\Debug\Laboratorio1.csprojResolveAssemblyReference.cache
+D:\Nueva carpeta\Nueva carpeta\UTN\2016\Metodología de sistemas\TRABAJO\repo\Laboratorio1\obj\Debug\Tutorial5.Compras.resources
+D:\Nueva carpeta\Nueva carpeta\UTN\2016\Metodología de sistemas\TRABAJO\repo\Laboratorio1\obj\Debug\Tutorial5.Login.resources
+D:\Nueva carpeta\Nueva carpeta\UTN\2016\Metodología de sistemas\TRABAJO\repo\Laboratorio1\obj\Debug\Tutorial5.Registrarse.resources
+D:\Nueva carpeta\Nueva carpeta\UTN\2016\Metodología de sistemas\TRABAJO\repo\Laboratorio1\obj\Debug\Tutorial5.Clientes.resources
+D:\Nueva carpeta\Nueva carpeta\UTN\2016\Metodología de sistemas\TRABAJO\repo\Laboratorio1\obj\Debug\Tutorial5.MenuPrincipal.resources
+D:\Nueva carpeta\Nueva carpeta\UTN\2016\Metodología de sistemas\TRABAJO\repo\Laboratorio1\obj\Debug\Tutorial5.Properties.Resources.resources
+D:\Nueva carpeta\Nueva carpeta\UTN\2016\Metodología de sistemas\TRABAJO\repo\Laboratorio1\obj\Debug\Tutorial5.Splash.resources
+D:\Nueva carpeta\Nueva carpeta\UTN\2016\Metodología de sistemas\TRABAJO\repo\Laboratorio1\obj\Debug\Tutorial5.Ventas.resources
+D:\Nueva carpeta\Nueva carpeta\UTN\2016\Metodología de sistemas\TRABAJO\repo\Laboratorio1\obj\Debug\Laboratorio1.csproj.GenerateResource.Cache
+D:\Nueva carpeta\Nueva carpeta\UTN\2016\Metodología de sistemas\TRABAJO\repo\Laboratorio1\obj\Debug\Tutorial5.exe
+D:\Nueva carpeta\Nueva carpeta\UTN\2016\Metodología de sistemas\TRABAJO\repo\Laboratorio1\obj\Debug\Tutorial5.pdb
+D:\Nueva carpeta\Nueva carpeta\UTN\2016\Metodología de sistemas\TRABAJO\repo\Laboratorio1\bin\Debug\EntityFramework.dll
+D:\Nueva carpeta\Nueva carpeta\UTN\2016\Metodología de sistemas\TRABAJO\repo\Laboratorio1\bin\Debug\EntityFramework.SqlServer.dll
+D:\Nueva carpeta\Nueva carpeta\UTN\2016\Metodología de sistemas\TRABAJO\repo\Laboratorio1\bin\Debug\EntityFramework.xml
+D:\Nueva carpeta\Nueva carpeta\UTN\2016\Metodología de sistemas\TRABAJO\repo\Laboratorio1\bin\Debug\EntityFramework.SqlServer.xml

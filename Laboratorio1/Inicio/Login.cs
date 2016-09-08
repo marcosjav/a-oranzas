@@ -52,11 +52,36 @@ namespace Tutorial5
             }
             else
             {
-                MessageBox.Show("Bienvenido Sr(a): " + txtuser.Text);
-                Program.usuario = txtuser.Text;
-                this.Hide();
-                MenuPrincipal fr = new MenuPrincipal();
-                fr.Show();
+                CampingEntities1 db = new CampingEntities1();
+                Usuario u = null;
+                try
+                {
+                    u = db.Usuario.Single(p => p.username.Equals(txtuser.Text.ToString()));
+                    if (u == null)
+                    {
+                        MessageBox.Show("Usuario incorrecto");
+                    }
+                    else if (u.clave.Equals(txtpass.Text))
+                    {
+                        MessageBox.Show("Bienvenid" + (u.hombre?"o ":"a ") + u.nombre);
+                        Program.usuario = u.nombre;
+                        this.Hide();
+                        MenuPrincipal fr = new MenuPrincipal();
+                        fr.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Clave incorrecta");
+                        txtpass.Text = "";
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                
+                
+                
             }
         }
 
