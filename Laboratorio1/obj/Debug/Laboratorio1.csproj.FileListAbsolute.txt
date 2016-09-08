@@ -47,3 +47,4 @@ D:\Nueva carpeta\Nueva carpeta\UTN\2016\Metodología de sistemas\TRABAJO\repo\La
 D:\Nueva carpeta\Nueva carpeta\UTN\2016\Metodología de sistemas\TRABAJO\repo\Laboratorio1\bin\Debug\EntityFramework.SqlServer.dll
 D:\Nueva carpeta\Nueva carpeta\UTN\2016\Metodología de sistemas\TRABAJO\repo\Laboratorio1\bin\Debug\EntityFramework.xml
 D:\Nueva carpeta\Nueva carpeta\UTN\2016\Metodología de sistemas\TRABAJO\repo\Laboratorio1\bin\Debug\EntityFramework.SqlServer.xml
+D:\Nueva carpeta\Nueva carpeta\UTN\2016\Metodología de sistemas\TRABAJO\repo\Laboratorio1\obj\Debug\Tutorial5.buscador.resources

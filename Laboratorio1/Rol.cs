@@ -14,6 +14,7 @@ namespace Tutorial5
     
     public partial class Rol
     {
+        public static int USUARIO = 1, SECRETARIO = 2, PROFESIONAL = 3, ADMINISTRADOR = 0;
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Rol()
         {

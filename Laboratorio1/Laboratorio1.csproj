@@ -123,6 +123,12 @@
     <Compile Include="Turno.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Usr-Adm\buscador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usr-Adm\buscador.Designer.cs">
+      <DependentUpon>buscador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Usr-Adm\Compras.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +176,9 @@
     <Compile Include="Usuario.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Usr-Adm\buscador.resx">
+      <DependentUpon>buscador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Usr-Adm\Compras.resx">
       <DependentUpon>Compras.cs</DependentUpon>
     </EmbeddedResource>

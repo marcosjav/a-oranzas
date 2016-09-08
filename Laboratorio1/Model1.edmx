@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="CampingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="CampingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Detalle">
           <Key>
             <PropertyRef Name="id_detalle" />
@@ -103,6 +103,7 @@
           <Property Name="clave" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="username" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="hombre" Type="bit" Nullable="false" />
+          <Property Name="nacimiento" Type="date" />
         </EntityType>
         <Association Name="FK_Detalle_Factura">
           <End Role="Factura" Type="Self.Factura" Multiplicity="1" />
@@ -260,8 +261,7 @@
             <End Role="Usuario" EntitySet="Usuario" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="CampingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -381,6 +381,7 @@
           <Property Name="hombre" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="Reserva" Relationship="Self.FK_Reserva_Usuario" FromRole="Usuario" ToRole="Reserva" />
           <NavigationProperty Name="Rol" Relationship="Self.FK_Usuario_Rol" FromRole="Usuario" ToRole="Rol" />
+          <Property Name="nacimiento" Type="DateTime" Precision="0" />
         </EntityType>
         <Association Name="FK_Detalle_Factura">
           <End Role="Factura" Type="Self.Factura" Multiplicity="1" />
@@ -641,6 +642,7 @@
           <EntitySetMapping Name="Usuario">
             <EntityTypeMapping TypeName="CampingModel.Usuario">
               <MappingFragment StoreEntitySet="Usuario">
+                <ScalarProperty Name="nacimiento" ColumnName="nacimiento" />
                 <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
                 <ScalarProperty Name="nombre" ColumnName="nombre" />
                 <ScalarProperty Name="apellido" ColumnName="apellido" />

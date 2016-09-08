@@ -98,6 +98,7 @@
     <Property Name="clave" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="username" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="hombre" Type="bit" Nullable="false" />
+    <Property Name="nacimiento" Type="date" />
   </EntityType>
   <Association Name="FK_Detalle_Factura">
     <End Role="Factura" Type="Self.Factura" Multiplicity="1" />

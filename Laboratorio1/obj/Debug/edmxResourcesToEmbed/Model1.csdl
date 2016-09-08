@@ -116,6 +116,7 @@
     <Property Name="hombre" Type="Boolean" Nullable="false" />
     <NavigationProperty Name="Reserva" Relationship="Self.FK_Reserva_Usuario" FromRole="Usuario" ToRole="Reserva" />
     <NavigationProperty Name="Rol" Relationship="Self.FK_Usuario_Rol" FromRole="Usuario" ToRole="Rol" />
+    <Property Name="nacimiento" Type="DateTime" Precision="0" />
   </EntityType>
   <Association Name="FK_Detalle_Factura">
     <End Role="Factura" Type="Self.Factura" Multiplicity="1" />
