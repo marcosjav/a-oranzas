@@ -153,6 +153,10 @@
     <Compile Include="Usr-Adm\Clientes.Designer.cs">
       <DependentUpon>Clientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Usr-Adm\ListarClientes.cs" />
+    <Compile Include="Usr-Adm\ListarClientes.Designer.cs">
+      <DependentUpon>ListarClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Usr-Adm\MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Usr-Adm\Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usr-Adm\ListarClientes.resx">
+      <DependentUpon>ListarClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usr-Adm\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
