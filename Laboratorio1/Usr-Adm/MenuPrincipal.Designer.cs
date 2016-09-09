@@ -48,29 +48,32 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.pServicios = new System.Windows.Forms.Panel();
-            this.cbCamping = new System.Windows.Forms.CheckBox();
-            this.cbPosada = new System.Windows.Forms.CheckBox();
-            this.cbRestaurante = new System.Windows.Forms.CheckBox();
-            this.cbCabalgatas = new System.Windows.Forms.CheckBox();
-            this.cbPaseoNautico = new System.Windows.Forms.CheckBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.label5 = new System.Windows.Forms.Label();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label6 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.rbCredito = new System.Windows.Forms.RadioButton();
+            this.rbDebito = new System.Windows.Forms.RadioButton();
+            this.rbEfectivo = new System.Windows.Forms.RadioButton();
+            this.btnPagar = new System.Windows.Forms.Button();
+            this.lblTotalPagar = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dtFechaServicio = new System.Windows.Forms.DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
+            this.contPaseoNautico = new System.Windows.Forms.NumericUpDown();
+            this.label4 = new System.Windows.Forms.Label();
+            this.contCabalgata = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
+            this.contRestaurante = new System.Windows.Forms.NumericUpDown();
+            this.label2 = new System.Windows.Forms.Label();
+            this.contPosada = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
+            this.contCamping = new System.Windows.Forms.NumericUpDown();
+            this.cbPaseoNautico = new System.Windows.Forms.CheckBox();
+            this.cbCabalgatas = new System.Windows.Forms.CheckBox();
+            this.cbRestaurante = new System.Windows.Forms.CheckBox();
+            this.cbPosada = new System.Windows.Forms.CheckBox();
+            this.cbCamping = new System.Windows.Forms.CheckBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnCalcularTotal = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnAcerca)).BeginInit();
@@ -81,11 +84,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnventas)).BeginInit();
             this.panel2.SuspendLayout();
             this.pServicios.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contPaseoNautico)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contCabalgata)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contRestaurante)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contPosada)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contCamping)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -206,6 +209,7 @@
             this.btnHome.TabIndex = 8;
             this.btnHome.TabStop = false;
             this.toolTip1.SetToolTip(this.btnHome, "Ventas");
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // btnproveedores
             // 
@@ -217,9 +221,6 @@
             this.btnproveedores.TabIndex = 7;
             this.btnproveedores.TabStop = false;
             this.toolTip1.SetToolTip(this.btnproveedores, "Proveedores");
-            this.btnproveedores.Click += new System.EventHandler(this.btnproveedores_Click);
-            this.btnproveedores.MouseLeave += new System.EventHandler(this.btnproveedores_MouseLeave);
-            this.btnproveedores.MouseHover += new System.EventHandler(this.btnproveedores_MouseHover);
             // 
             // btnclientes
             // 
@@ -231,9 +232,6 @@
             this.btnclientes.TabIndex = 6;
             this.btnclientes.TabStop = false;
             this.toolTip1.SetToolTip(this.btnclientes, "Clientes");
-            this.btnclientes.Click += new System.EventHandler(this.btnclientes_Click);
-            this.btnclientes.MouseLeave += new System.EventHandler(this.btnclientes_MouseLeave);
-            this.btnclientes.MouseHover += new System.EventHandler(this.btnclientes_MouseHover);
             // 
             // btncompras
             // 
@@ -245,9 +243,6 @@
             this.btncompras.TabIndex = 5;
             this.btncompras.TabStop = false;
             this.toolTip1.SetToolTip(this.btncompras, "Compras");
-            this.btncompras.Click += new System.EventHandler(this.btncompras_Click);
-            this.btncompras.MouseLeave += new System.EventHandler(this.btncompras_MouseLeave);
-            this.btncompras.MouseHover += new System.EventHandler(this.btncompras_MouseHover);
             // 
             // btnventas
             // 
@@ -259,9 +254,6 @@
             this.btnventas.TabIndex = 4;
             this.btnventas.TabStop = false;
             this.toolTip1.SetToolTip(this.btnventas, "Ventas");
-            this.btnventas.Click += new System.EventHandler(this.btnventas_Click);
-            this.btnventas.MouseLeave += new System.EventHandler(this.btnventas_MouseLeave);
-            this.btnventas.MouseHover += new System.EventHandler(this.btnventas_MouseHover);
             // 
             // panel2
             // 
@@ -291,24 +283,26 @@
             // pServicios
             // 
             this.pServicios.BackColor = System.Drawing.Color.Transparent;
-            this.pServicios.Controls.Add(this.radioButton3);
-            this.pServicios.Controls.Add(this.radioButton2);
-            this.pServicios.Controls.Add(this.radioButton1);
-            this.pServicios.Controls.Add(this.button1);
-            this.pServicios.Controls.Add(this.label8);
+            this.pServicios.Controls.Add(this.btnCalcularTotal);
+            this.pServicios.Controls.Add(this.label9);
+            this.pServicios.Controls.Add(this.rbCredito);
+            this.pServicios.Controls.Add(this.rbDebito);
+            this.pServicios.Controls.Add(this.rbEfectivo);
+            this.pServicios.Controls.Add(this.btnPagar);
+            this.pServicios.Controls.Add(this.lblTotalPagar);
             this.pServicios.Controls.Add(this.label7);
             this.pServicios.Controls.Add(this.label6);
-            this.pServicios.Controls.Add(this.dateTimePicker1);
+            this.pServicios.Controls.Add(this.dtFechaServicio);
             this.pServicios.Controls.Add(this.label5);
-            this.pServicios.Controls.Add(this.numericUpDown5);
+            this.pServicios.Controls.Add(this.contPaseoNautico);
             this.pServicios.Controls.Add(this.label4);
-            this.pServicios.Controls.Add(this.numericUpDown4);
+            this.pServicios.Controls.Add(this.contCabalgata);
             this.pServicios.Controls.Add(this.label3);
-            this.pServicios.Controls.Add(this.numericUpDown3);
+            this.pServicios.Controls.Add(this.contRestaurante);
             this.pServicios.Controls.Add(this.label2);
-            this.pServicios.Controls.Add(this.numericUpDown2);
+            this.pServicios.Controls.Add(this.contPosada);
             this.pServicios.Controls.Add(this.label1);
-            this.pServicios.Controls.Add(this.numericUpDown1);
+            this.pServicios.Controls.Add(this.contCamping);
             this.pServicios.Controls.Add(this.cbPaseoNautico);
             this.pServicios.Controls.Add(this.cbCabalgatas);
             this.pServicios.Controls.Add(this.cbRestaurante);
@@ -319,137 +313,104 @@
             this.pServicios.Size = new System.Drawing.Size(897, 402);
             this.pServicios.TabIndex = 2;
             // 
-            // cbCamping
+            // label9
             // 
-            this.cbCamping.AutoSize = true;
-            this.cbCamping.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbCamping.ForeColor = System.Drawing.Color.White;
-            this.cbCamping.Location = new System.Drawing.Point(27, 43);
-            this.cbCamping.Name = "cbCamping";
-            this.cbCamping.Size = new System.Drawing.Size(123, 29);
-            this.cbCamping.TabIndex = 0;
-            this.cbCamping.Text = "Camping";
-            this.cbCamping.UseVisualStyleBackColor = true;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(668, 24);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(161, 20);
+            this.label9.TabIndex = 23;
+            this.label9.Text = "Fecha de Servicios";
             // 
-            // cbPosada
+            // rbCredito
             // 
-            this.cbPosada.AutoSize = true;
-            this.cbPosada.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbPosada.ForeColor = System.Drawing.Color.White;
-            this.cbPosada.Location = new System.Drawing.Point(27, 118);
-            this.cbPosada.Name = "cbPosada";
-            this.cbPosada.Size = new System.Drawing.Size(110, 29);
-            this.cbPosada.TabIndex = 1;
-            this.cbPosada.Text = "Posada";
-            this.cbPosada.UseVisualStyleBackColor = true;
+            this.rbCredito.AutoSize = true;
+            this.rbCredito.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbCredito.ForeColor = System.Drawing.Color.White;
+            this.rbCredito.Location = new System.Drawing.Point(716, 274);
+            this.rbCredito.Name = "rbCredito";
+            this.rbCredito.Size = new System.Drawing.Size(76, 20);
+            this.rbCredito.TabIndex = 22;
+            this.rbCredito.TabStop = true;
+            this.rbCredito.Text = "Credito";
+            this.rbCredito.UseVisualStyleBackColor = true;
             // 
-            // cbRestaurante
+            // rbDebito
             // 
-            this.cbRestaurante.AutoSize = true;
-            this.cbRestaurante.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbRestaurante.ForeColor = System.Drawing.Color.White;
-            this.cbRestaurante.Location = new System.Drawing.Point(27, 193);
-            this.cbRestaurante.Name = "cbRestaurante";
-            this.cbRestaurante.Size = new System.Drawing.Size(159, 29);
-            this.cbRestaurante.TabIndex = 2;
-            this.cbRestaurante.Text = "Restaurante";
-            this.cbRestaurante.UseVisualStyleBackColor = true;
+            this.rbDebito.AutoSize = true;
+            this.rbDebito.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbDebito.ForeColor = System.Drawing.Color.White;
+            this.rbDebito.Location = new System.Drawing.Point(801, 274);
+            this.rbDebito.Name = "rbDebito";
+            this.rbDebito.Size = new System.Drawing.Size(72, 20);
+            this.rbDebito.TabIndex = 21;
+            this.rbDebito.TabStop = true;
+            this.rbDebito.Text = "Debito";
+            this.rbDebito.UseVisualStyleBackColor = true;
             // 
-            // cbCabalgatas
+            // rbEfectivo
             // 
-            this.cbCabalgatas.AutoSize = true;
-            this.cbCabalgatas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbCabalgatas.ForeColor = System.Drawing.Color.White;
-            this.cbCabalgatas.Location = new System.Drawing.Point(27, 268);
-            this.cbCabalgatas.Name = "cbCabalgatas";
-            this.cbCabalgatas.Size = new System.Drawing.Size(150, 29);
-            this.cbCabalgatas.TabIndex = 3;
-            this.cbCabalgatas.Text = "Cabalgatas";
-            this.cbCabalgatas.UseVisualStyleBackColor = true;
+            this.rbEfectivo.AutoSize = true;
+            this.rbEfectivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbEfectivo.ForeColor = System.Drawing.Color.White;
+            this.rbEfectivo.Location = new System.Drawing.Point(625, 274);
+            this.rbEfectivo.Name = "rbEfectivo";
+            this.rbEfectivo.Size = new System.Drawing.Size(82, 20);
+            this.rbEfectivo.TabIndex = 20;
+            this.rbEfectivo.TabStop = true;
+            this.rbEfectivo.Text = "Efectivo";
+            this.rbEfectivo.UseVisualStyleBackColor = true;
             // 
-            // cbPaseoNautico
+            // btnPagar
             // 
-            this.cbPaseoNautico.AutoSize = true;
-            this.cbPaseoNautico.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbPaseoNautico.ForeColor = System.Drawing.Color.White;
-            this.cbPaseoNautico.Location = new System.Drawing.Point(27, 343);
-            this.cbPaseoNautico.Name = "cbPaseoNautico";
-            this.cbPaseoNautico.Size = new System.Drawing.Size(184, 29);
-            this.cbPaseoNautico.TabIndex = 4;
-            this.cbPaseoNautico.Text = "Paseo Nautico";
-            this.cbPaseoNautico.UseVisualStyleBackColor = true;
+            this.btnPagar.Location = new System.Drawing.Point(653, 324);
+            this.btnPagar.Name = "btnPagar";
+            this.btnPagar.Size = new System.Drawing.Size(200, 64);
+            this.btnPagar.TabIndex = 19;
+            this.btnPagar.Text = "Pagar";
+            this.btnPagar.UseVisualStyleBackColor = true;
             // 
-            // numericUpDown1
+            // lblTotalPagar
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(520, 48);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(32, 20);
-            this.numericUpDown1.TabIndex = 5;
+            this.lblTotalPagar.AutoSize = true;
+            this.lblTotalPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalPagar.ForeColor = System.Drawing.Color.White;
+            this.lblTotalPagar.Location = new System.Drawing.Point(808, 193);
+            this.lblTotalPagar.Name = "lblTotalPagar";
+            this.lblTotalPagar.Size = new System.Drawing.Size(27, 29);
+            this.lblTotalPagar.TabIndex = 18;
+            this.lblTotalPagar.Text = "0";
             // 
-            // label1
+            // label7
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(328, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 20);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Cantidad de Carpas";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(780, 193);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(27, 29);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "$";
             // 
-            // label2
+            // label6
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(328, 123);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(186, 20);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Cantidad de Personas";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(604, 193);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(170, 29);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Total a Pagar";
             // 
-            // numericUpDown2
+            // dtFechaServicio
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(520, 123);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(32, 20);
-            this.numericUpDown2.TabIndex = 7;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(328, 198);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(186, 20);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Cantidad de Personas";
-            // 
-            // numericUpDown3
-            // 
-            this.numericUpDown3.Location = new System.Drawing.Point(520, 198);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(32, 20);
-            this.numericUpDown3.TabIndex = 9;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(328, 273);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(186, 20);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Cantidad de Personas";
-            // 
-            // numericUpDown4
-            // 
-            this.numericUpDown4.Location = new System.Drawing.Point(520, 273);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(32, 20);
-            this.numericUpDown4.TabIndex = 11;
+            this.dtFechaServicio.Location = new System.Drawing.Point(653, 47);
+            this.dtFechaServicio.Name = "dtFechaServicio";
+            this.dtFechaServicio.Size = new System.Drawing.Size(200, 20);
+            this.dtFechaServicio.TabIndex = 15;
             // 
             // label5
             // 
@@ -462,100 +423,168 @@
             this.label5.TabIndex = 14;
             this.label5.Text = "Cantidad de Personas";
             // 
-            // numericUpDown5
+            // contPaseoNautico
             // 
-            this.numericUpDown5.Location = new System.Drawing.Point(520, 348);
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(32, 20);
-            this.numericUpDown5.TabIndex = 13;
+            this.contPaseoNautico.Enabled = false;
+            this.contPaseoNautico.Location = new System.Drawing.Point(520, 348);
+            this.contPaseoNautico.Name = "contPaseoNautico";
+            this.contPaseoNautico.Size = new System.Drawing.Size(32, 20);
+            this.contPaseoNautico.TabIndex = 13;
             // 
-            // dateTimePicker1
+            // label4
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(653, 47);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 15;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(328, 273);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(186, 20);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Cantidad de Personas";
             // 
-            // label6
+            // contCabalgata
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(666, 123);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(170, 29);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "Total a Pagar";
+            this.contCabalgata.Enabled = false;
+            this.contCabalgata.Location = new System.Drawing.Point(520, 273);
+            this.contCabalgata.Name = "contCabalgata";
+            this.contCabalgata.Size = new System.Drawing.Size(32, 20);
+            this.contCabalgata.TabIndex = 11;
             // 
-            // label7
+            // label3
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(680, 191);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(27, 29);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "$";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(328, 198);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(186, 20);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Cantidad de Personas";
             // 
-            // label8
+            // contRestaurante
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(734, 191);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(27, 29);
-            this.label8.TabIndex = 18;
-            this.label8.Text = "0";
+            this.contRestaurante.Enabled = false;
+            this.contRestaurante.Location = new System.Drawing.Point(520, 198);
+            this.contRestaurante.Name = "contRestaurante";
+            this.contRestaurante.Size = new System.Drawing.Size(32, 20);
+            this.contRestaurante.TabIndex = 9;
             // 
-            // button1
+            // label2
             // 
-            this.button1.Location = new System.Drawing.Point(653, 324);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 64);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Pagar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(328, 123);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(186, 20);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Cantidad de Personas";
             // 
-            // radioButton1
+            // contPosada
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.ForeColor = System.Drawing.Color.White;
-            this.radioButton1.Location = new System.Drawing.Point(625, 274);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(82, 20);
-            this.radioButton1.TabIndex = 20;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Efectivo";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.contPosada.Enabled = false;
+            this.contPosada.Location = new System.Drawing.Point(520, 123);
+            this.contPosada.Name = "contPosada";
+            this.contPosada.Size = new System.Drawing.Size(32, 20);
+            this.contPosada.TabIndex = 7;
             // 
-            // radioButton2
+            // label1
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.ForeColor = System.Drawing.Color.White;
-            this.radioButton2.Location = new System.Drawing.Point(801, 274);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(72, 20);
-            this.radioButton2.TabIndex = 21;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Debito";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(328, 48);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(168, 20);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Cantidad de Carpas";
             // 
-            // radioButton3
+            // contCamping
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.ForeColor = System.Drawing.Color.White;
-            this.radioButton3.Location = new System.Drawing.Point(716, 274);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(76, 20);
-            this.radioButton3.TabIndex = 22;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Credito";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.contCamping.Enabled = false;
+            this.contCamping.Location = new System.Drawing.Point(520, 48);
+            this.contCamping.Name = "contCamping";
+            this.contCamping.Size = new System.Drawing.Size(32, 20);
+            this.contCamping.TabIndex = 5;
+            // 
+            // cbPaseoNautico
+            // 
+            this.cbPaseoNautico.AutoSize = true;
+            this.cbPaseoNautico.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbPaseoNautico.ForeColor = System.Drawing.Color.White;
+            this.cbPaseoNautico.Location = new System.Drawing.Point(27, 343);
+            this.cbPaseoNautico.Name = "cbPaseoNautico";
+            this.cbPaseoNautico.Size = new System.Drawing.Size(184, 29);
+            this.cbPaseoNautico.TabIndex = 4;
+            this.cbPaseoNautico.Text = "Paseo Nautico";
+            this.cbPaseoNautico.UseVisualStyleBackColor = true;
+            this.cbPaseoNautico.CheckedChanged += new System.EventHandler(this.cbPaseoNautico_CheckedChanged);
+            // 
+            // cbCabalgatas
+            // 
+            this.cbCabalgatas.AutoSize = true;
+            this.cbCabalgatas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbCabalgatas.ForeColor = System.Drawing.Color.White;
+            this.cbCabalgatas.Location = new System.Drawing.Point(27, 268);
+            this.cbCabalgatas.Name = "cbCabalgatas";
+            this.cbCabalgatas.Size = new System.Drawing.Size(150, 29);
+            this.cbCabalgatas.TabIndex = 3;
+            this.cbCabalgatas.Text = "Cabalgatas";
+            this.cbCabalgatas.UseVisualStyleBackColor = true;
+            this.cbCabalgatas.CheckedChanged += new System.EventHandler(this.cbCabalgatas_CheckedChanged);
+            // 
+            // cbRestaurante
+            // 
+            this.cbRestaurante.AutoSize = true;
+            this.cbRestaurante.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbRestaurante.ForeColor = System.Drawing.Color.White;
+            this.cbRestaurante.Location = new System.Drawing.Point(27, 193);
+            this.cbRestaurante.Name = "cbRestaurante";
+            this.cbRestaurante.Size = new System.Drawing.Size(159, 29);
+            this.cbRestaurante.TabIndex = 2;
+            this.cbRestaurante.Text = "Restaurante";
+            this.cbRestaurante.UseVisualStyleBackColor = true;
+            this.cbRestaurante.CheckedChanged += new System.EventHandler(this.cbRestaurante_CheckedChanged);
+            // 
+            // cbPosada
+            // 
+            this.cbPosada.AutoSize = true;
+            this.cbPosada.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbPosada.ForeColor = System.Drawing.Color.White;
+            this.cbPosada.Location = new System.Drawing.Point(27, 118);
+            this.cbPosada.Name = "cbPosada";
+            this.cbPosada.Size = new System.Drawing.Size(110, 29);
+            this.cbPosada.TabIndex = 1;
+            this.cbPosada.Text = "Posada";
+            this.cbPosada.UseVisualStyleBackColor = true;
+            this.cbPosada.CheckedChanged += new System.EventHandler(this.cbPosada_CheckedChanged);
+            // 
+            // cbCamping
+            // 
+            this.cbCamping.AutoSize = true;
+            this.cbCamping.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbCamping.ForeColor = System.Drawing.Color.White;
+            this.cbCamping.Location = new System.Drawing.Point(27, 43);
+            this.cbCamping.Name = "cbCamping";
+            this.cbCamping.Size = new System.Drawing.Size(123, 29);
+            this.cbCamping.TabIndex = 0;
+            this.cbCamping.Text = "Camping";
+            this.cbCamping.UseVisualStyleBackColor = true;
+            this.cbCamping.CheckedChanged += new System.EventHandler(this.cbCamping_CheckedChanged);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // btnCalcularTotal
+            // 
+            this.btnCalcularTotal.Location = new System.Drawing.Point(653, 99);
+            this.btnCalcularTotal.Name = "btnCalcularTotal";
+            this.btnCalcularTotal.Size = new System.Drawing.Size(200, 64);
+            this.btnCalcularTotal.TabIndex = 24;
+            this.btnCalcularTotal.Text = "CALCULAR";
+            this.btnCalcularTotal.UseVisualStyleBackColor = true;
+            this.btnCalcularTotal.Click += new System.EventHandler(this.btnCalcularTotal_Click);
             // 
             // MenuPrincipal
             // 
@@ -575,7 +604,6 @@
             this.Name = "MenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuPrincipal";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -588,11 +616,11 @@
             this.panel2.ResumeLayout(false);
             this.pServicios.ResumeLayout(false);
             this.pServicios.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contPaseoNautico)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contCabalgata)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contRestaurante)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contPosada)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contCamping)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -618,28 +646,31 @@
         private System.Windows.Forms.PictureBox btnAcerca;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Panel pServicios;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.RadioButton rbCredito;
+        private System.Windows.Forms.RadioButton rbDebito;
+        private System.Windows.Forms.RadioButton rbEfectivo;
+        private System.Windows.Forms.Button btnPagar;
+        private System.Windows.Forms.Label lblTotalPagar;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtFechaServicio;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.NumericUpDown numericUpDown5;
+        private System.Windows.Forms.NumericUpDown contPaseoNautico;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
+        private System.Windows.Forms.NumericUpDown contCabalgata;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.NumericUpDown contRestaurante;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown contPosada;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown contCamping;
         private System.Windows.Forms.CheckBox cbPaseoNautico;
         private System.Windows.Forms.CheckBox cbCabalgatas;
         private System.Windows.Forms.CheckBox cbRestaurante;
         private System.Windows.Forms.CheckBox cbPosada;
         private System.Windows.Forms.CheckBox cbCamping;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button btnCalcularTotal;
     }
 }

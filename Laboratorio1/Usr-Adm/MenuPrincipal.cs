@@ -12,6 +12,14 @@ namespace Tutorial5
 {
     public partial class MenuPrincipal : Form
     {
+        //Valores por servicio
+        const int vCamping = 100;
+        const int vPosada = 200;
+        const int vCabalgata = 100;
+        const int vRestaurante = 20;
+        const int vPaseoNautico = 150;
+        int valorTotal;
+
         public MenuPrincipal()
         {
             InitializeComponent();
@@ -21,90 +29,12 @@ namespace Tutorial5
         {
 
             //Centrar el Panel
-            Size desktopSize = System.Windows.Forms.SystemInformation.PrimaryMonitorSize; //Captura el Tamaño del Monitor
-            Int32 ancho = (this.Width - panel3.Width) / 2;
-            panel3.Location = new Point(ancho, panel3.Location.Y);
+           
             lblfecha.Text = DateTime.Now.ToShortDateString();
             lbluser.Text = "Usuario: "+ Program.usuario;
             lblhora.Text = DateTime.Now.ToLongTimeString();
+            timer1.Start();
 
-
-        }
-
-        private void btnventas_Click(object sender, EventArgs e)
-        {
-            Ventas frm = new Ventas();
-            frm.ShowDialog();
-        }
-
-        private void btncompras_Click(object sender, EventArgs e)
-        {
-            
-            Compras frm = new Compras();
-            frm.ShowDialog();
-        }
-
-        private void btnclientes_Click(object sender, EventArgs e)
-        {
-
-            Clientes frm = new Clientes();
-            frm.ShowDialog();
-        }
-
-        private void btnproveedores_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void btnventas_MouseHover(object sender, EventArgs e)
-        {
-            //btnventas.Size = new Size(75,70);
-            btnventas.BackgroundImageLayout = ImageLayout.Stretch;
-            btnventas.BackgroundImage = Properties.Resources.ventas2;
-        }
-
-        private void btnventas_MouseLeave(object sender, EventArgs e)
-        {
-            //btnventas.Size = new Size(70, 65);
-            btnventas.BackgroundImageLayout = ImageLayout.Zoom;
-            btnventas.BackgroundImage = Properties.Resources.ventas;
-        }
-
-        private void btncompras_MouseHover(object sender, EventArgs e)
-        {
-            btncompras.BackgroundImageLayout = ImageLayout.Stretch;
-            btncompras.BackgroundImage = Properties.Resources.compras2;
-          //  btncompras.Size = new Size(80, 70);
-        }
-
-        private void btncompras_MouseLeave(object sender, EventArgs e)
-        {
-          //  btncompras.Size = new Size(70, 65);
-            btncompras.BackgroundImageLayout = ImageLayout.Zoom;
-            btncompras.BackgroundImage = Properties.Resources.compras;
-        }
-
-        private void btnclientes_MouseHover(object sender, EventArgs e)
-        {
-            btnclientes.BackgroundImageLayout = ImageLayout.Stretch;
-            btnclientes.BackgroundImage = Properties.Resources.clientes2;
-        }
-
-        private void btnclientes_MouseLeave(object sender, EventArgs e)
-        {
-            btnclientes.BackgroundImageLayout = ImageLayout.Zoom;
-            btnclientes.BackgroundImage = Properties.Resources.clientes;
-        }
-
-        private void btnproveedores_MouseHover(object sender, EventArgs e)
-        {
-            btnproveedores.BackgroundImageLayout = ImageLayout.Stretch;
-            btnproveedores.BackgroundImage = Properties.Resources.proveedor2;
-        }
-
-        private void btnproveedores_MouseLeave(object sender, EventArgs e)
-        {
-            btnproveedores.BackgroundImageLayout = ImageLayout.Zoom;
-            btnproveedores.BackgroundImage = Properties.Resources.proveedor;
         }
 
         private void btnmin_Click(object sender, EventArgs e)
@@ -118,6 +48,96 @@ namespace Tutorial5
             {
                 Application.Exit();
             }
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            pServicios.Visible = true;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        //Checkeado o no checkeado
+        private void cbCamping_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbCamping.Checked)
+            {
+                contCamping.Enabled = true;
+                contCamping.Value = 1;
+            }
+            else
+            {
+                contCamping.Enabled = false;
+                contCamping.Value = 0;
+            }
+        }
+        private void cbPosada_CheckedChanged(object sender, EventArgs e)
+        {
+            if(cbPosada.Checked)
+            {
+                contPosada.Enabled = true;
+                contPosada.Value = 1;
+            }
+            else
+            {
+                contPosada.Enabled = false;
+                contPosada.Value = 0;
+            }
+            
+        }
+        private void cbRestaurante_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbRestaurante.Checked)
+            {
+                contRestaurante.Enabled = true;
+                contRestaurante.Value = 1;
+            }
+            else
+            {
+                contRestaurante.Enabled = false;
+                contRestaurante.Value = 0;
+            }
+        }
+        private void cbCabalgatas_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbCabalgatas.Checked)
+            {
+                contCabalgata.Enabled = true;
+                contCabalgata.Value = 1;
+            }
+            else
+            {
+                contCabalgata.Enabled = false;
+                contCabalgata.Value = 0;
+            }
+        }
+        private void cbPaseoNautico_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbPaseoNautico.Checked)
+            {
+                contPaseoNautico.Enabled = true;
+                contPaseoNautico.Value = 1;
+            }
+            else
+            {
+                contPaseoNautico.Enabled = false;
+                contPaseoNautico.Value = 0;
+            }
+        }
+
+        private void btnCalcularTotal_Click(object sender, EventArgs e)
+        {
+            lblhora.Text = DateTime.Now.ToLongTimeString();
+            valorTotal += Convert.ToInt32(contCamping.Value.ToString(), 10) * vCamping;
+            valorTotal += Convert.ToInt32(contCabalgata.Value.ToString(), 10) * vCabalgata;
+            valorTotal += Convert.ToInt32(contPosada.Value.ToString(), 10) * vPosada;
+            valorTotal += Convert.ToInt32(contPaseoNautico.Value.ToString(), 10) * vPaseoNautico;
+            valorTotal += Convert.ToInt32(contRestaurante.Value.ToString(), 10) * vRestaurante;
+            lblTotalPagar.Text = Convert.ToString(valorTotal, 10);
+            valorTotal = 0;
         }
     }
 }
