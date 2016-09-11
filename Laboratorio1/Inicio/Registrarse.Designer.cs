@@ -33,6 +33,8 @@
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tbDireccion = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.llDatosPersonales = new System.Windows.Forms.LinkLabel();
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -58,8 +60,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.tbDireccion = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -126,6 +126,26 @@
             this.groupBox1.TabIndex = 22;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos personales";
+            // 
+            // tbDireccion
+            // 
+            this.tbDireccion.Location = new System.Drawing.Point(121, 199);
+            this.tbDireccion.Name = "tbDireccion";
+            this.tbDireccion.Size = new System.Drawing.Size(253, 20);
+            this.tbDireccion.TabIndex = 24;
+            this.tbDireccion.Tag = "Apellidos";
+            this.tbDireccion.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(44, 202);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(55, 13);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "Dirección:";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // llDatosPersonales
             // 
@@ -280,9 +300,10 @@
             this.panel3.Controls.Add(this.panel1);
             this.panel3.Controls.Add(this.groupBox1);
             this.panel3.Controls.Add(this.groupBox2);
-            this.panel3.Location = new System.Drawing.Point(145, 36);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(528, 512);
+            this.panel3.Size = new System.Drawing.Size(530, 514);
             this.panel3.TabIndex = 0;
             // 
             // groupBox3
@@ -376,26 +397,6 @@
             this.panel1.Size = new System.Drawing.Size(522, 54);
             this.panel1.TabIndex = 24;
             // 
-            // tbDireccion
-            // 
-            this.tbDireccion.Location = new System.Drawing.Point(121, 199);
-            this.tbDireccion.Name = "tbDireccion";
-            this.tbDireccion.Size = new System.Drawing.Size(253, 20);
-            this.tbDireccion.TabIndex = 24;
-            this.tbDireccion.Tag = "Apellidos";
-            this.tbDireccion.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(44, 202);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 13);
-            this.label7.TabIndex = 23;
-            this.label7.Text = "Dirección:";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
             // Registrarse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -403,13 +404,13 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Tutorial5.Properties.Resources.fondo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(822, 560);
+            this.ClientSize = new System.Drawing.Size(530, 514);
             this.Controls.Add(this.panel3);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Registrarse";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registrarse";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Clientes_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

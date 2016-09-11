@@ -21,7 +21,6 @@ namespace Tutorial5
         {
             //Centrar el Panel
             Size desktopSize = System.Windows.Forms.SystemInformation.PrimaryMonitorSize; //Captura el Tamaño del Monitor
-            panel1.Location = new Point((desktopSize.Width - panel1.Width) / 2, (desktopSize.Height - panel1.Height) / 2);
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

@@ -33,6 +33,7 @@ namespace Tutorial5
             pAdminUsr.Visible = false;
             pFacturar.Visible = true;
             lblSeccion.Text = "Facturación";
+            
         }
 
         private void btnmin_Click(object sender, EventArgs e)

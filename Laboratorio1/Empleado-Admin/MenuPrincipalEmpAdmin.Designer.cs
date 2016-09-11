@@ -65,10 +65,6 @@
             this.lblSeccion = new System.Windows.Forms.Label();
             this.pListado = new System.Windows.Forms.Panel();
             this.Listados = new System.Windows.Forms.TabControl();
-            this.LClientes = new System.Windows.Forms.TabPage();
-            this.LdgvLC = new System.Windows.Forms.DataGridView();
-            this.NombreCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ApellidoCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LReservas = new System.Windows.Forms.TabPage();
             this.LbtnLRver = new System.Windows.Forms.Button();
             this.LcobLRturno = new System.Windows.Forms.ComboBox();
@@ -77,9 +73,9 @@
             this.LcobLRserv = new System.Windows.Forms.ComboBox();
             this.LdgvLR = new System.Windows.Forms.DataGridView();
             this.LEspera = new System.Windows.Forms.TabPage();
-            this.LcobLEhabit = new System.Windows.Forms.ComboBox();
+            this.LbtnLEver = new System.Windows.Forms.Button();
             this.LcobLEserv = new System.Windows.Forms.ComboBox();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.LdgvLE = new System.Windows.Forms.DataGridView();
             this.LServicio = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -89,10 +85,16 @@
             this.LdpLSdesde = new System.Windows.Forms.DateTimePicker();
             this.LcobLSserv = new System.Windows.Forms.ComboBox();
             this.LdgvLS = new System.Windows.Forms.DataGridView();
+            this.LClientes = new System.Windows.Forms.TabPage();
+            this.LdgvLC = new System.Windows.Forms.DataGridView();
+            this.NombreCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ApellidoCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pAdminUsr = new System.Windows.Forms.Panel();
             this.AdmUsr = new System.Windows.Forms.TabControl();
             this.CU = new System.Windows.Forms.TabPage();
-            this.VU = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.AbtnRegistrar = new System.Windows.Forms.Button();
+            this.AbtnCancelar = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.AtbPassConf = new System.Windows.Forms.TextBox();
             this.AtbPass = new System.Windows.Forms.TextBox();
@@ -114,31 +116,22 @@
             this.AtbApellidos = new System.Windows.Forms.TextBox();
             this.ArbMasculino = new System.Windows.Forms.RadioButton();
             this.AdpFecNac = new System.Windows.Forms.DateTimePicker();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.AbtnRegistrar = new System.Windows.Forms.Button();
-            this.AbtnCancelar = new System.Windows.Forms.Button();
-            this.AdgvVerUsr = new System.Windows.Forms.DataGridView();
-            this.AbtnVUModif = new System.Windows.Forms.Button();
+            this.VU = new System.Windows.Forms.TabPage();
             this.AbtnVUEliminar = new System.Windows.Forms.Button();
+            this.AbtnVUModif = new System.Windows.Forms.Button();
+            this.AdgvVerUsr = new System.Windows.Forms.DataGridView();
             this.pInformes = new System.Windows.Forms.Panel();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
             this.label20 = new System.Windows.Forms.Label();
             this.IbtnCAver = new System.Windows.Forms.Button();
             this.IcobCAserv = new System.Windows.Forms.ComboBox();
             this.IdgvCA = new System.Windows.Forms.DataGridView();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
             this.label17 = new System.Windows.Forms.Label();
             this.IbtnRMver = new System.Windows.Forms.Button();
             this.IcobRMserv = new System.Windows.Forms.ComboBox();
             this.IdgvRM = new System.Windows.Forms.DataGridView();
-            this.pAcerca = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.label23 = new System.Windows.Forms.Label();
             this.IcobTRpago = new System.Windows.Forms.ComboBox();
@@ -150,7 +143,13 @@
             this.IdpTRdesde = new System.Windows.Forms.DateTimePicker();
             this.IcobTRserv = new System.Windows.Forms.ComboBox();
             this.IdgvTR = new System.Windows.Forms.DataGridView();
-            this.LbtnLEver = new System.Windows.Forms.Button();
+            this.pAcerca = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnAcerca)).BeginInit();
@@ -163,33 +162,33 @@
             ((System.ComponentModel.ISupportInitialize)(this.Fdgv)).BeginInit();
             this.pListado.SuspendLayout();
             this.Listados.SuspendLayout();
-            this.LClientes.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.LdgvLC)).BeginInit();
             this.LReservas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LdgvLR)).BeginInit();
             this.LEspera.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LdgvLE)).BeginInit();
             this.LServicio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LdgvLS)).BeginInit();
+            this.LClientes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LdgvLC)).BeginInit();
             this.pAdminUsr.SuspendLayout();
             this.AdmUsr.SuspendLayout();
             this.CU.SuspendLayout();
-            this.VU.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.VU.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AdgvVerUsr)).BeginInit();
             this.pInformes.SuspendLayout();
             this.tabControl3.SuspendLayout();
             this.tabPage6.SuspendLayout();
-            this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IdgvCA)).BeginInit();
+            this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IdgvRM)).BeginInit();
+            this.tabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IdgvTR)).BeginInit();
             this.pAcerca.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.tabPage8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IdgvTR)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -543,38 +542,6 @@
             this.Listados.Size = new System.Drawing.Size(859, 425);
             this.Listados.TabIndex = 0;
             // 
-            // LClientes
-            // 
-            this.LClientes.Controls.Add(this.LdgvLC);
-            this.LClientes.Location = new System.Drawing.Point(4, 22);
-            this.LClientes.Name = "LClientes";
-            this.LClientes.Padding = new System.Windows.Forms.Padding(3);
-            this.LClientes.Size = new System.Drawing.Size(851, 399);
-            this.LClientes.TabIndex = 0;
-            this.LClientes.Text = "Listado Clientes";
-            this.LClientes.UseVisualStyleBackColor = true;
-            // 
-            // LdgvLC
-            // 
-            this.LdgvLC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.LdgvLC.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.NombreCliente,
-            this.ApellidoCliente});
-            this.LdgvLC.Location = new System.Drawing.Point(6, 16);
-            this.LdgvLC.Name = "LdgvLC";
-            this.LdgvLC.Size = new System.Drawing.Size(839, 373);
-            this.LdgvLC.TabIndex = 0;
-            // 
-            // NombreCliente
-            // 
-            this.NombreCliente.HeaderText = "Nombre";
-            this.NombreCliente.Name = "NombreCliente";
-            // 
-            // ApellidoCliente
-            // 
-            this.ApellidoCliente.HeaderText = "Apellido";
-            this.ApellidoCliente.Name = "ApellidoCliente";
-            // 
             // LReservas
             // 
             this.LReservas.Controls.Add(this.LbtnLRver);
@@ -659,9 +626,8 @@
             // LEspera
             // 
             this.LEspera.Controls.Add(this.LbtnLEver);
-            this.LEspera.Controls.Add(this.LcobLEhabit);
             this.LEspera.Controls.Add(this.LcobLEserv);
-            this.LEspera.Controls.Add(this.dataGridView3);
+            this.LEspera.Controls.Add(this.LdgvLE);
             this.LEspera.Location = new System.Drawing.Point(4, 22);
             this.LEspera.Name = "LEspera";
             this.LEspera.Padding = new System.Windows.Forms.Padding(3);
@@ -670,18 +636,14 @@
             this.LEspera.Text = "Listado de Espera";
             this.LEspera.UseVisualStyleBackColor = true;
             // 
-            // LcobLEhabit
+            // LbtnLEver
             // 
-            this.LcobLEhabit.FormattingEnabled = true;
-            this.LcobLEhabit.Items.AddRange(new object[] {
-            "Habitaciones Dobles",
-            "Habitaciones Triples"});
-            this.LcobLEhabit.Location = new System.Drawing.Point(291, 25);
-            this.LcobLEhabit.Name = "LcobLEhabit";
-            this.LcobLEhabit.Size = new System.Drawing.Size(225, 21);
-            this.LcobLEhabit.TabIndex = 5;
-            this.LcobLEhabit.Text = "Tipo de Habitación...";
-            this.LcobLEhabit.Visible = false;
+            this.LbtnLEver.Location = new System.Drawing.Point(341, 25);
+            this.LbtnLEver.Name = "LbtnLEver";
+            this.LbtnLEver.Size = new System.Drawing.Size(75, 23);
+            this.LbtnLEver.TabIndex = 6;
+            this.LbtnLEver.Text = "Ver";
+            this.LbtnLEver.UseVisualStyleBackColor = true;
             // 
             // LcobLEserv
             // 
@@ -697,13 +659,13 @@
             this.LcobLEserv.TabIndex = 4;
             this.LcobLEserv.Text = "Categorias...";
             // 
-            // dataGridView3
+            // LdgvLE
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(3, 67);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(845, 326);
-            this.dataGridView3.TabIndex = 3;
+            this.LdgvLE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.LdgvLE.Location = new System.Drawing.Point(3, 67);
+            this.LdgvLE.Name = "LdgvLE";
+            this.LdgvLE.Size = new System.Drawing.Size(845, 326);
+            this.LdgvLE.TabIndex = 3;
             // 
             // LServicio
             // 
@@ -800,6 +762,38 @@
             this.LdgvLS.Size = new System.Drawing.Size(845, 326);
             this.LdgvLS.TabIndex = 6;
             // 
+            // LClientes
+            // 
+            this.LClientes.Controls.Add(this.LdgvLC);
+            this.LClientes.Location = new System.Drawing.Point(4, 22);
+            this.LClientes.Name = "LClientes";
+            this.LClientes.Padding = new System.Windows.Forms.Padding(3);
+            this.LClientes.Size = new System.Drawing.Size(851, 399);
+            this.LClientes.TabIndex = 0;
+            this.LClientes.Text = "Listado Clientes";
+            this.LClientes.UseVisualStyleBackColor = true;
+            // 
+            // LdgvLC
+            // 
+            this.LdgvLC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.LdgvLC.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.NombreCliente,
+            this.ApellidoCliente});
+            this.LdgvLC.Location = new System.Drawing.Point(6, 16);
+            this.LdgvLC.Name = "LdgvLC";
+            this.LdgvLC.Size = new System.Drawing.Size(839, 373);
+            this.LdgvLC.TabIndex = 0;
+            // 
+            // NombreCliente
+            // 
+            this.NombreCliente.HeaderText = "Nombre";
+            this.NombreCliente.Name = "NombreCliente";
+            // 
+            // ApellidoCliente
+            // 
+            this.ApellidoCliente.HeaderText = "Apellido";
+            this.ApellidoCliente.Name = "ApellidoCliente";
+            // 
             // pAdminUsr
             // 
             this.pAdminUsr.BackColor = System.Drawing.Color.Transparent;
@@ -834,18 +828,38 @@
             this.CU.TabIndex = 0;
             this.CU.Text = "Crear Usuarios";
             // 
-            // VU
+            // groupBox2
             // 
-            this.VU.Controls.Add(this.AbtnVUEliminar);
-            this.VU.Controls.Add(this.AbtnVUModif);
-            this.VU.Controls.Add(this.AdgvVerUsr);
-            this.VU.Location = new System.Drawing.Point(4, 22);
-            this.VU.Name = "VU";
-            this.VU.Padding = new System.Windows.Forms.Padding(3);
-            this.VU.Size = new System.Drawing.Size(864, 384);
-            this.VU.TabIndex = 1;
-            this.VU.Text = "Ver Usuarios";
-            this.VU.UseVisualStyleBackColor = true;
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.AbtnRegistrar);
+            this.groupBox2.Controls.Add(this.AbtnCancelar);
+            this.groupBox2.ForeColor = System.Drawing.Color.Black;
+            this.groupBox2.Location = new System.Drawing.Point(676, 14);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(173, 354);
+            this.groupBox2.TabIndex = 24;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Opciones";
+            // 
+            // AbtnRegistrar
+            // 
+            this.AbtnRegistrar.BackgroundImage = global::Tutorial5.Properties.Resources.btn_registrar;
+            this.AbtnRegistrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.AbtnRegistrar.Location = new System.Drawing.Point(46, 113);
+            this.AbtnRegistrar.Name = "AbtnRegistrar";
+            this.AbtnRegistrar.Size = new System.Drawing.Size(95, 45);
+            this.AbtnRegistrar.TabIndex = 16;
+            this.AbtnRegistrar.UseVisualStyleBackColor = true;
+            // 
+            // AbtnCancelar
+            // 
+            this.AbtnCancelar.BackgroundImage = global::Tutorial5.Properties.Resources.btnCancelar;
+            this.AbtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.AbtnCancelar.Location = new System.Drawing.Point(46, 228);
+            this.AbtnCancelar.Name = "AbtnCancelar";
+            this.AbtnCancelar.Size = new System.Drawing.Size(95, 45);
+            this.AbtnCancelar.TabIndex = 15;
+            this.AbtnCancelar.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
@@ -1061,46 +1075,27 @@
             this.AdpFecNac.Size = new System.Drawing.Size(191, 20);
             this.AdpFecNac.TabIndex = 7;
             // 
-            // groupBox2
+            // VU
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.AbtnRegistrar);
-            this.groupBox2.Controls.Add(this.AbtnCancelar);
-            this.groupBox2.ForeColor = System.Drawing.Color.Black;
-            this.groupBox2.Location = new System.Drawing.Point(676, 14);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(173, 354);
-            this.groupBox2.TabIndex = 24;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Opciones";
+            this.VU.Controls.Add(this.AbtnVUEliminar);
+            this.VU.Controls.Add(this.AbtnVUModif);
+            this.VU.Controls.Add(this.AdgvVerUsr);
+            this.VU.Location = new System.Drawing.Point(4, 22);
+            this.VU.Name = "VU";
+            this.VU.Padding = new System.Windows.Forms.Padding(3);
+            this.VU.Size = new System.Drawing.Size(864, 384);
+            this.VU.TabIndex = 1;
+            this.VU.Text = "Ver Usuarios";
+            this.VU.UseVisualStyleBackColor = true;
             // 
-            // AbtnRegistrar
+            // AbtnVUEliminar
             // 
-            this.AbtnRegistrar.BackgroundImage = global::Tutorial5.Properties.Resources.btn_registrar;
-            this.AbtnRegistrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.AbtnRegistrar.Location = new System.Drawing.Point(46, 113);
-            this.AbtnRegistrar.Name = "AbtnRegistrar";
-            this.AbtnRegistrar.Size = new System.Drawing.Size(95, 45);
-            this.AbtnRegistrar.TabIndex = 16;
-            this.AbtnRegistrar.UseVisualStyleBackColor = true;
-            // 
-            // AbtnCancelar
-            // 
-            this.AbtnCancelar.BackgroundImage = global::Tutorial5.Properties.Resources.btnCancelar;
-            this.AbtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.AbtnCancelar.Location = new System.Drawing.Point(46, 228);
-            this.AbtnCancelar.Name = "AbtnCancelar";
-            this.AbtnCancelar.Size = new System.Drawing.Size(95, 45);
-            this.AbtnCancelar.TabIndex = 15;
-            this.AbtnCancelar.UseVisualStyleBackColor = true;
-            // 
-            // AdgvVerUsr
-            // 
-            this.AdgvVerUsr.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.AdgvVerUsr.Location = new System.Drawing.Point(10, 10);
-            this.AdgvVerUsr.Name = "AdgvVerUsr";
-            this.AdgvVerUsr.Size = new System.Drawing.Size(755, 364);
-            this.AdgvVerUsr.TabIndex = 0;
+            this.AbtnVUEliminar.Location = new System.Drawing.Point(776, 210);
+            this.AbtnVUEliminar.Name = "AbtnVUEliminar";
+            this.AbtnVUEliminar.Size = new System.Drawing.Size(75, 23);
+            this.AbtnVUEliminar.TabIndex = 2;
+            this.AbtnVUEliminar.Text = "Eliminar";
+            this.AbtnVUEliminar.UseVisualStyleBackColor = true;
             // 
             // AbtnVUModif
             // 
@@ -1111,14 +1106,13 @@
             this.AbtnVUModif.Text = "Modificar";
             this.AbtnVUModif.UseVisualStyleBackColor = true;
             // 
-            // AbtnVUEliminar
+            // AdgvVerUsr
             // 
-            this.AbtnVUEliminar.Location = new System.Drawing.Point(776, 210);
-            this.AbtnVUEliminar.Name = "AbtnVUEliminar";
-            this.AbtnVUEliminar.Size = new System.Drawing.Size(75, 23);
-            this.AbtnVUEliminar.TabIndex = 2;
-            this.AbtnVUEliminar.Text = "Eliminar";
-            this.AbtnVUEliminar.UseVisualStyleBackColor = true;
+            this.AdgvVerUsr.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.AdgvVerUsr.Location = new System.Drawing.Point(10, 10);
+            this.AdgvVerUsr.Name = "AdgvVerUsr";
+            this.AdgvVerUsr.Size = new System.Drawing.Size(755, 364);
+            this.AdgvVerUsr.TabIndex = 0;
             // 
             // pInformes
             // 
@@ -1155,20 +1149,6 @@
             this.tabPage6.Size = new System.Drawing.Size(864, 384);
             this.tabPage6.TabIndex = 0;
             this.tabPage6.Text = "Clientes atendidos";
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Controls.Add(this.label17);
-            this.tabPage7.Controls.Add(this.IbtnRMver);
-            this.tabPage7.Controls.Add(this.IcobRMserv);
-            this.tabPage7.Controls.Add(this.IdgvRM);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(864, 384);
-            this.tabPage7.TabIndex = 1;
-            this.tabPage7.Text = "Reservas de mañana";
-            this.tabPage7.UseVisualStyleBackColor = true;
             // 
             // label20
             // 
@@ -1211,6 +1191,20 @@
             this.IdgvCA.Size = new System.Drawing.Size(845, 326);
             this.IdgvCA.TabIndex = 24;
             // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.label17);
+            this.tabPage7.Controls.Add(this.IbtnRMver);
+            this.tabPage7.Controls.Add(this.IcobRMserv);
+            this.tabPage7.Controls.Add(this.IdgvRM);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(864, 384);
+            this.tabPage7.TabIndex = 1;
+            this.tabPage7.Text = "Reservas de mañana";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -1251,83 +1245,6 @@
             this.IdgvRM.Name = "IdgvRM";
             this.IdgvRM.Size = new System.Drawing.Size(845, 326);
             this.IdgvRM.TabIndex = 30;
-            // 
-            // pAcerca
-            // 
-            this.pAcerca.BackColor = System.Drawing.Color.Transparent;
-            this.pAcerca.Controls.Add(this.panel5);
-            this.pAcerca.Location = new System.Drawing.Point(0, 109);
-            this.pAcerca.Name = "pAcerca";
-            this.pAcerca.Size = new System.Drawing.Size(900, 444);
-            this.pAcerca.TabIndex = 7;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Black;
-            this.panel5.Controls.Add(this.label18);
-            this.panel5.Controls.Add(this.label19);
-            this.panel5.Controls.Add(this.label21);
-            this.panel5.Controls.Add(this.label22);
-            this.panel5.Controls.Add(this.pictureBox3);
-            this.panel5.Location = new System.Drawing.Point(48, 72);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(804, 301);
-            this.panel5.TabIndex = 1;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(330, 249);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(354, 18);
-            this.label18.TabIndex = 4;
-            this.label18.Text = "Nuñez Osvaldo      osvaldito-25@hotmail.com";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(374, 194);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(73, 18);
-            this.label19.TabIndex = 3;
-            this.label19.Text = "© xCode";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(199, 221);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(452, 18);
-            this.label21.TabIndex = 2;
-            this.label21.Text = "Desarrolladores: Vazquez Marcos    mjv87ster@gmail.com";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(324, 164);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(213, 18);
-            this.label22.TabIndex = 1;
-            this.label22.Text = "Añoranzas Chaqueñas v2.0";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = global::Tutorial5.Properties.Resources.xcode;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(224, 2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(361, 150);
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
             // 
             // tabPage8
             // 
@@ -1450,14 +1367,82 @@
             this.IdgvTR.Size = new System.Drawing.Size(845, 326);
             this.IdgvTR.TabIndex = 24;
             // 
-            // LbtnLEver
+            // pAcerca
             // 
-            this.LbtnLEver.Location = new System.Drawing.Point(538, 25);
-            this.LbtnLEver.Name = "LbtnLEver";
-            this.LbtnLEver.Size = new System.Drawing.Size(75, 23);
-            this.LbtnLEver.TabIndex = 6;
-            this.LbtnLEver.Text = "Ver";
-            this.LbtnLEver.UseVisualStyleBackColor = true;
+            this.pAcerca.BackColor = System.Drawing.Color.Transparent;
+            this.pAcerca.Controls.Add(this.panel5);
+            this.pAcerca.Location = new System.Drawing.Point(0, 109);
+            this.pAcerca.Name = "pAcerca";
+            this.pAcerca.Size = new System.Drawing.Size(900, 444);
+            this.pAcerca.TabIndex = 7;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Black;
+            this.panel5.Controls.Add(this.label18);
+            this.panel5.Controls.Add(this.label19);
+            this.panel5.Controls.Add(this.label21);
+            this.panel5.Controls.Add(this.label22);
+            this.panel5.Controls.Add(this.pictureBox3);
+            this.panel5.Location = new System.Drawing.Point(48, 72);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(804, 301);
+            this.panel5.TabIndex = 1;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(330, 249);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(354, 18);
+            this.label18.TabIndex = 4;
+            this.label18.Text = "Nuñez Osvaldo      osvaldito-25@hotmail.com";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Location = new System.Drawing.Point(374, 194);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(73, 18);
+            this.label19.TabIndex = 3;
+            this.label19.Text = "© xCode";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.White;
+            this.label21.Location = new System.Drawing.Point(199, 221);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(452, 18);
+            this.label21.TabIndex = 2;
+            this.label21.Text = "Desarrolladores: Vazquez Marcos    mjv87ster@gmail.com";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.Location = new System.Drawing.Point(324, 164);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(213, 18);
+            this.label22.TabIndex = 1;
+            this.label22.Text = "Añoranzas Chaqueñas v2.0";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImage = global::Tutorial5.Properties.Resources.xcode;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Location = new System.Drawing.Point(224, 2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(361, 150);
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
             // 
             // MenuPrincipalEmpAdmin
             // 
@@ -1471,11 +1456,11 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pFacturar);
             this.Controls.Add(this.pAdminUsr);
             this.Controls.Add(this.pInformes);
             this.Controls.Add(this.pAcerca);
             this.Controls.Add(this.pListado);
-            this.Controls.Add(this.pFacturar);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1496,40 +1481,40 @@
             ((System.ComponentModel.ISupportInitialize)(this.Fdgv)).EndInit();
             this.pListado.ResumeLayout(false);
             this.Listados.ResumeLayout(false);
-            this.LClientes.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.LdgvLC)).EndInit();
             this.LReservas.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.LdgvLR)).EndInit();
             this.LEspera.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LdgvLE)).EndInit();
             this.LServicio.ResumeLayout(false);
             this.LServicio.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LdgvLS)).EndInit();
+            this.LClientes.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.LdgvLC)).EndInit();
             this.pAdminUsr.ResumeLayout(false);
             this.AdmUsr.ResumeLayout(false);
             this.CU.ResumeLayout(false);
-            this.VU.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
+            this.VU.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.AdgvVerUsr)).EndInit();
             this.pInformes.ResumeLayout(false);
             this.tabControl3.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IdgvCA)).EndInit();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IdgvCA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IdgvRM)).EndInit();
+            this.tabPage8.ResumeLayout(false);
+            this.tabPage8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IdgvTR)).EndInit();
             this.pAcerca.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.tabPage8.ResumeLayout(false);
-            this.tabPage8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IdgvTR)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1584,9 +1569,8 @@
         private System.Windows.Forms.ComboBox LcobLRserv;
         private System.Windows.Forms.DataGridView LdgvLR;
         private System.Windows.Forms.TabPage LEspera;
-        private System.Windows.Forms.ComboBox LcobLEhabit;
         private System.Windows.Forms.ComboBox LcobLEserv;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView LdgvLE;
         private System.Windows.Forms.TabPage LServicio;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
