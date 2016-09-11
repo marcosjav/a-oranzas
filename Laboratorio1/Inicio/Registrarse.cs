@@ -72,14 +72,19 @@ namespace Tutorial5
             if( tbNombres.TextLength <1 || tbApellidos.TextLength < 1 || tbUsername.TextLength <1 || 
                 tbPass.TextLength < 6 || !tbPass.Text.Equals(tbPassConf.Text) ||
                 tbEmail.TextLength < 1 || years < 18)
-            {
+            {   // EN REALIDAD ESTE HICE A LAS APURADAS, TENDRÍAMMOS QUE SEPARAR CADA CASO E INFORMAR PORQUEÉ NO SE PUEDE
+                MessageBox.Show("Error putito");
+            }
+            else  /// ésto es en el caso de que todo esté bien
+            {   /// unhandled acveptioon,  excepción no atenddia (el delay me está reventando jajaç)
                 CampingEntities1 db = new CampingEntities1();
-                var q = db.Usuario.Single(p => p.username.Equals(tbUsername.Text));
-                if (q == null)
-                    MessageBox.Show("El nombre de usuario ya existe");
-                else
+
+                try         ///  falta hacer que se cierre la ventana. cargá esto así trabajo desde acá porque hice modificaciónes hoy pero las meto en este
                 {
-                    try
+                    var q = db.Usuario.Where(p => p.username.Equals(tbUsername.Text));
+                    if (q.Count()>0)
+                        MessageBox.Show("El nombre de usuario ya existe");
+                    else
                     {
                         Usuario u = new Usuario
                         {
@@ -97,14 +102,12 @@ namespace Tutorial5
                         db.SaveChanges();
                         MessageBox.Show("Listo");
                     }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
                 }
-            }else
-            {
-                MessageBox.Show("Error");
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            
             }
         }
 
