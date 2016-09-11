@@ -469,12 +469,12 @@
             this.BackgroundImage = global::Tutorial5.Properties.Resources.fondo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(900, 550);
+            this.Controls.Add(this.pAcerca);
             this.Controls.Add(this.lblPosicion);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pHome);
             this.Controls.Add(this.pQSomos);
-            this.Controls.Add(this.pAcerca);
             this.Controls.Add(this.pTarifas);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "InvPrincipal";

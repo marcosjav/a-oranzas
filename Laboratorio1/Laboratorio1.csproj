@@ -93,6 +93,12 @@
     <Compile Include="Invitado\InvPrincipal.Designer.cs">
       <DependentUpon>InvPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cliente\MenuPrincipalClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\MenuPrincipalClientes.Designer.cs">
+      <DependentUpon>MenuPrincipalClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -129,18 +135,6 @@
     <Compile Include="Turno.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Usr-Adm\buscador.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Usr-Adm\buscador.Designer.cs">
-      <DependentUpon>buscador.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Usr-Adm\Compras.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Usr-Adm\Compras.Designer.cs">
-      <DependentUpon>Compras.cs</DependentUpon>
-    </Compile>
     <Compile Include="Inicio\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,17 +147,11 @@
     <Compile Include="Inicio\Registrarse.Designer.cs">
       <DependentUpon>Registrarse.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usr-Adm\Clientes.cs">
+    <Compile Include="Empleado-Admin\MenuPrincipalEmpAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Usr-Adm\Clientes.Designer.cs">
-      <DependentUpon>Clientes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Usr-Adm\MenuPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Usr-Adm\MenuPrincipal.Designer.cs">
-      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    <Compile Include="Empleado-Admin\MenuPrincipalEmpAdmin.Designer.cs">
+      <DependentUpon>MenuPrincipalEmpAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -173,23 +161,14 @@
     <Compile Include="Inicio\Splash.Designer.cs">
       <DependentUpon>Splash.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usr-Adm\Ventas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Usr-Adm\Ventas.Designer.cs">
-      <DependentUpon>Ventas.cs</DependentUpon>
-    </Compile>
     <Compile Include="Usuario.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Cliente\MenuPrincipalClientes.resx">
+      <DependentUpon>MenuPrincipalClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Invitado\InvPrincipal.resx">
       <DependentUpon>InvPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Usr-Adm\buscador.resx">
-      <DependentUpon>buscador.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Usr-Adm\Compras.resx">
-      <DependentUpon>Compras.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -197,11 +176,8 @@
     <EmbeddedResource Include="Inicio\Registrarse.resx">
       <DependentUpon>Registrarse.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Usr-Adm\Clientes.resx">
-      <DependentUpon>Clientes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Usr-Adm\MenuPrincipal.resx">
-      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    <EmbeddedResource Include="Empleado-Admin\MenuPrincipalEmpAdmin.resx">
+      <DependentUpon>MenuPrincipalEmpAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -215,9 +191,6 @@
     </Compile>
     <EmbeddedResource Include="Inicio\Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Usr-Adm\Ventas.resx">
-      <DependentUpon>Ventas.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -324,6 +297,7 @@
     <None Include="Resources\restaurant.jpg" />
     <None Include="Resources\servicios.png" />
     <None Include="Resources\informes.png" />
+    <None Include="Resources\checklist_256.png" />
     <Content Include="Soft TST.ico" />
   </ItemGroup>
   <ItemGroup>

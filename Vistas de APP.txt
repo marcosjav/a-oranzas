@@ -1,0 +1,6 @@
+solo clientes: servicios, ver servicios solicitados, lugares disponibles, acerca
+
+empleado: cobranza, factura, clientes(lugares disponibles, reservas por clientes, Clientes por servicio y rango de fecha, Total de servicios realizados discriminando por tipo, Total recaudado por periodos discriminando por tipo de pago, Total recaudado por servicio  por periodo), acerca
+
+admin: cobranza, factura, agregar usr, informes, clientes(como empleado), acerca 
+

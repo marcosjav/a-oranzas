@@ -66,7 +66,7 @@ namespace Tutorial5
                         MessageBox.Show("Bienvenid" + (u.hombre?"o ":"a ") + u.nombre);
                         Program.usuario = u.nombre;
                         this.Hide();
-                        MenuPrincipal fr = new MenuPrincipal();
+                        MenuPrincipalEmpAdmin fr = new MenuPrincipalEmpAdmin();
                         fr.Show();
                     }
                     else
